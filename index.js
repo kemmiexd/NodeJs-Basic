@@ -34,6 +34,51 @@ app.get('/users/search', function(req, res) {
     });
 });
 
+app.get('/toan_hoc', function(req, res) {
+    var width = req.query.width;
+    var height = req.query.height;
+    var dientich = '';
+    var err = '';
+
+    if (width && height) {
+        if (width <= 0 || height <= 0) {
+            err = 'Height hoặc Width phải lón hơn 0'
+        } else {
+            dientich = width*height
+        }
+    }
+    
+    res.render('toan-hoc', {
+        result: dientich,
+        err: err
+    });
+});
+
+app.get('/tam_giac', function(req, res) {
+    var a = req.query.canhA;
+    var b = req.query.canhB;
+    var c = req.query.canhC;
+    var err = '';
+    var p = ( Number(a) + Number(b) + Number(c) ) / 2;
+    var s = '';
+
+    if(a && b && c) {
+        if(a <= 0 || b <= 0 || c <= 0){
+            err = 'Mỗi cạnh phải lớn hơn 0'
+        }else if(a < b - c || a < c - b || b < c - a)  {
+            err = 'Học lại toán đi má'
+        }
+        else{
+            s = Math.sqrt( p * (p-a) * (p-b) * (p-c) )
+        }
+    }
+
+    res.render('tam-giac', {
+        result: s,
+        err: err
+    });
+});
+
 app.listen(port, function() {
-    console.log('ok' + port);
+    console.log('ok ' + port);
 });
