@@ -63,11 +63,15 @@ app.get('/tam_giac', function(req, res) {
     var s = '';
 
     if(a && b && c) {
+
         if(a <= 0 || b <= 0 || c <= 0){
             err = 'Mỗi cạnh phải lớn hơn 0'
-        }else if(a < b - c || a < c - b || b < c - a)  {
+        }
+
+        else if(Number(a) > Number(b) + Number(c) || Number(b) > Number(c) + Number(a) || Number(c) > Number(a) + Number(b) )  {
             err = 'Học lại toán đi má'
         }
+        
         else{
             s = Math.sqrt( p * (p-a) * (p-b) * (p-c) )
         }
