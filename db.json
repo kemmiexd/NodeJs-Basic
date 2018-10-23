@@ -5,12 +5,21 @@
       "phone": "0981210696",
       "id": "9AT6Y6my-",
       "email": "kemmie.xd@gmail.com",
-      "password": "e10adc3949ba59abbe56e057f20f883e"
+      "password": "123456"
     },
     {
-      "name": "Chung hạ sĩ",
-      "phone": "0981210696",
-      "id": "tufbrQxyb"
+      "name": "Chung thượng tá",
+      "phone": "0901020304",
+      "email": "chungthuongta",
+      "password": "654321",
+      "id": "Z5LOTO8WM"
+    },
+    {
+      "name": "Awesome Frozen Tuna",
+      "phone": "028.3997.0523 - 028.3997.0524 - 028.6292.1636          ",
+      "email": "Chungbeyonce",
+      "password": "987654",
+      "id": "ZMktZvssN"
     }
   ]
 }

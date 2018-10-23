@@ -18,5 +18,11 @@ block content
         .form-group
             label Phone
             input(class="form-control" name="phone", type="text" value=user.phone ? user.phone : "")
+        .form-group
+            label Email
+            input(class="form-control" name="email", type="text" value=user.email ? user.email : "")
+        .form-group
+            label Password
+            input(class="form-control" name="password", type="text" value=user.password ? user.password : "")
 
         button(class="btn btn-primary") Update

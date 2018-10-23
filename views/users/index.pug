@@ -1,3 +1,4 @@
+
 extends ../layouts/kemmie.pug
 
 block content
@@ -14,20 +15,23 @@ block content
         br
         table.table
             tr
-                th ID
                 th Name
                 th Phone
+                th Email
+                th Password
                 th Action
 
 
             each user in users
                 tr
-                    td=user.id
                     td=user.name
                     td=user.phone
+                    td=user.email
+                    td=user.password
                     td
                         a.btn.btn-light(href="/users/" + user.id) View
                         a.btn.btn-danger(href="/users/update/" + user.id) Update
                         a.btn.btn-primary(href="/users/delete/" + user.id) Delete
 
         a(class="btn btn-primary" href="/users/create") Create
+        a(class="btn btn-danger" href="/auth/login") Login

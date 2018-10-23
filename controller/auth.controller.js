@@ -22,9 +22,9 @@ module.exports.postLogin = function(req, res) {
         return;
     }
 
-    var md5Password = md5(password);
+    
 
-    if (user.password !== md5Password) {
+    if (user.password !== password) {
         res.render('auth/login', {
             errors: [
                 'Nhớ lại password đi bạn.'

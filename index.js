@@ -28,7 +28,7 @@ app.use('/auth', authRoute);
 
 app.get('/', function(req, res) {
     res.render('index', {
-       name: 'Thái', 
+       name: 'Chung thiếu úy', 
     });
 });
 

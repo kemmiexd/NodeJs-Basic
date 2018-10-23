@@ -1,5 +1,8 @@
 h5{
     text-transform: uppercase;
     font-weight: bold;
-    color:gray;
+    color:red;
+}
+a.btn{
+    margin-right:10px;
 }

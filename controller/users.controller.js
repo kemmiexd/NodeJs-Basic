@@ -59,10 +59,12 @@ module.exports.postUpdate = function(req, res) {
     var id = req.body.id;
     var name = req.body.name;
     var phone = req.body.phone;
+    var email = req.body.email;
+    var password = req.body.password;
 
     db.get('users')
         .find({id: id})
-        .assign({name: name, phone: phone})
+        .assign({name: name, phone: phone, email: email , password: password })
         .write()
 
     res.redirect('/users');
@@ -74,7 +76,7 @@ module.exports.delete = function(req, res) {
     db.get('users')
         .remove({id: id})
         .write()
-    // var user = db.get('users').find({id: id}).value();
+    
 
     res.redirect('/users');
 };
