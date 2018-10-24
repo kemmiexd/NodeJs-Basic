@@ -2,11 +2,27 @@
 extends ../layouts/kemmie.pug
 
 block content
-        h1 User List
-        h5 console.log
-        h5 nắm rõ luồng nó đi từ đâu sang đâu
-        h5 đọc lỗi cẩn thận để tìm nhanh
-        h5 không biết gì thì search http://www.google.com/
+        .row
+            .col-lg-6
+                h1 Khẩu quyết chiến thắng
+                h6 console.log
+                h6 nắm rõ luồng nó đi từ đâu sang đâu
+                h6 đọc lỗi cẩn thận để tìm nhanh
+                h6 không biết gì thì search http://www.google.com/
+
+                br
+                br
+
+            .col-lg-6
+                h1 Khẩu quyết Debug
+                h6 F10 để chạy từng dòng
+                h6 F9 để chui vào hàm
+                h6 F11 để chạy sang hàm tiếp theo
+                h6 Shift F11 để nhảy ra ngoài hàm
+                h6 F8 để tắt debug
+
+                br
+                br
 
         form(action="/users/search", method="GET")
             input(class="form-control" type="text", name="q")
@@ -32,6 +48,18 @@ block content
                         a.btn.btn-light(href="/users/" + user.id) View
                         a.btn.btn-danger(href="/users/update/" + user.id) Update
                         a.btn.btn-primary(href="/users/delete/" + user.id) Delete
+                        a.btn.btn-light(href="/cart/add/" + user.id) Add
+
+        ul.pagination
+            li
+                a(href='/users') 1
+            li
+                a(href='/users?page=2') 2
+            li
+                a(href='/users?page=3') 3
+            li
+                a(href='/users?page=4') 4
+
 
         a(class="btn btn-primary" href="/users/create") Create
         a(class="btn btn-danger" href="/auth/login") Login

@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "name": "Kemmie",
+      "name": "Chung trung tá",
       "phone": "0981210696",
       "id": "9AT6Y6my-",
-      "email": "kemmie.xd@gmail.com",
+      "email": "Chung Jay-Z",
       "password": "123456"
     },
     {
@@ -15,11 +15,80 @@
       "id": "Z5LOTO8WM"
     },
     {
-      "name": "Awesome Frozen Tuna",
-      "phone": "028.3997.0523 - 028.3997.0524 - 028.6292.1636          ",
+      "name": "Chung Thượng sĩ",
+      "phone": "0981210696",
+      "email": "chungthuongsi",
+      "password": "123456",
+      "id": "zt-O7jdI8"
+    },
+    {
+      "name": "Chung thiếu úy",
+      "phone": "0981210696",
+      "email": "Chungbeyonce",
+      "password": "123456",
+      "id": "IV3yKDACt"
+    },
+    {
+      "name": "Chung trung sĩ",
+      "phone": "0981210696",
+      "email": "Chungbeyonce",
+      "password": "123456",
+      "id": "wBMxDzF0q"
+    },
+    {
+      "name": "Chung hạ sĩ",
+      "phone": "0901020304",
       "email": "Chungbeyonce",
       "password": "987654",
-      "id": "ZMktZvssN"
+      "id": "vTR1pX8s1"
+    },
+    {
+      "name": "Chung đại úy",
+      "phone": "981210696",
+      "email": "Chungbeyonce",
+      "password": "1234562",
+      "id": "Aa-NCfijt"
+    },
+    {
+      "name": "Chung đại tá",
+      "phone": "0981210696",
+      "email": "chungdaita",
+      "password": "6543212",
+      "id": "1MdDuNMaw"
+    },
+    {
+      "name": "Chung thiếu tướng",
+      "phone": "0901020304",
+      "email": "Chungbeyonce",
+      "password": "98765445",
+      "id": "nOgFMFi5c"
+    },
+    {
+      "name": "Thái học viên",
+      "phone": "0981210696",
+      "email": "kemmie",
+      "password": "123456",
+      "id": "UeGl32fxe"
+    },
+    {
+      "name": "${element.name}",
+      "phone": "0981210696",
+      "email": "kemmie.xd@gmail.com",
+      "password": "123456",
+      "avatar": "44713568_331590627390565_8925726589879058432_n.png",
+      "id": "KKtsJWTqf"
+    }
+  ],
+  "session": [
+    {
+      "id": "pWodbTZKY"
+    },
+    {
+      "id": "O4cQJdM5i",
+      "cart": {
+        "undefined": 1,
+        "9AT6Y6my-": 15
+      }
     }
   ]
 }
