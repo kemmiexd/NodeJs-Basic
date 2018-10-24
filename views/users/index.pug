@@ -32,6 +32,7 @@ block content
         table.table
             tr
                 th Name
+                th Avatar
                 th Phone
                 th Email
                 th Password
@@ -41,6 +42,8 @@ block content
             each user in users
                 tr
                     td=user.name
+                    td
+                        img(src=user.avatar, width="100")
                     td=user.phone
                     td=user.email
                     td=user.password
