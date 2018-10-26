@@ -1,0 +1,15 @@
+extends ../layouts/kemmie.pug
+
+block content
+    h1 News Transfer
+
+    form(action="/transfer/create", method="POST")
+        input(type="hidden", name="_csrf", value="csrfToken")
+        .form-group
+            label Account
+            input(class="form-control" name="accountId", type="text")
+        .form-group
+            label Amount
+            input(class="form-control" name="amount", type="number")
+
+        button(class="btn btn-primary") Transfer

@@ -1,20 +1,28 @@
-var db = require('../db');
+var User = require('../models/users.models');
+
 var shortid = require('shortid');
 
 module.exports.index = function(req, res) {
-    var page = parseInt(req.query.page) || 1;
-    var perPage = 100;
+    // var page = parseInt(req.query.page) || 1;
+    // var perPage = 100;
 
-    var start = (page - 1) * perPage;
-    var end = page * perPage;
+    // var start = (page - 1) * perPage;
+    // var end = page * perPage;
 
-    var drop = (page - 1) * perPage;
+    // var drop = (page - 1) * perPage;
 
-    res.render('users/index', {
-        // users: db.get('users').value().slice(start, end)
-        users: db.get('users').drop(drop).take(perPage).value()
+    // res.render('users/index', {
+    //     // users: db.get('users').value().slice(start, end)
+    //     users: db.get('users').drop(drop).take(perPage).value()
+    // });
+
+    User.find().then(function(users) {
+        res.render('users/index', {
+            users: users
+        });
     });
 };
+
 
 module.exports.search = function(req, res) {
     var q = req.query.q;
@@ -54,11 +62,16 @@ module.exports.update = function(req, res) {
     var id = req.params.id;
 
     if (id) {
-        var user = db.get('users').find({id: id}).value();
-
-        res.render('users/update', {
-            user: user
+        var user = User.updateUser({id: id}, function(err,res) {
+            res.render('users/update', {
+                user: user
+            });
         });
+        // var user = db.get('users').find({id: id}).value();
+
+        // res.render('users/update', {
+        //     user: user
+        // });
     } else {
         res.redirect('/users');
     }
