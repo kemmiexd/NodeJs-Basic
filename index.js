@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var csurf = require('csurf');
+// var csurf = require('csurf');
 var mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGO_URL);
@@ -30,7 +30,7 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(sessionMiddleware);
-app.use(csurf({ cookie: true }));
+// app.use(csurf({ cookie: true }));
 
 
 app.use(express.static('publics'));
