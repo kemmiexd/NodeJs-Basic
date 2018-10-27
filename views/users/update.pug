@@ -10,7 +10,7 @@ block content
 
     form(action="/users/update", method="POST")
 
-        input(class="form-control" name="id", type="hidden" value=user.id ? user.id : "" )
+        input(class="form-control" name="_id", type="hidden" value=user._id ? user._id : "" )
 
         .form-group
             label Name
