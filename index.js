@@ -21,6 +21,7 @@ var apiUserRoute = require('./api/routes/users.route');
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
+
 var db = require('./db');
 
 var port = 3000;
@@ -30,10 +31,10 @@ app.set('views', './views');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use('/api/users', apiUserRoute);
 app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(sessionMiddleware);
 // app.use(csurf({ cookie: true }));
-
 
 app.use(express.static('publics'));
 
@@ -44,7 +45,7 @@ app.use('/auth', authRoute);
 app.use('/cart', cartRoute);
 app.use('/transfer', authMiddleware.requireAuth, transferRoute);
 
-app.use('/api/users', apiUserRoute);
+
 
 app.get('/', function(req, res) {
     res.render('index', {

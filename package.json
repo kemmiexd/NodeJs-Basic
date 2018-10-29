@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kemmiexd/NodeJs-Basic#readme",
   "dependencies": {
+    "ajax-request": "^1.2.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "csurf": "^1.9.0",
