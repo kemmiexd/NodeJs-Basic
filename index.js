@@ -6,6 +6,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var path = require('path');
 // var csurf = require('csurf');
 var mongoose = require('mongoose');
 
@@ -17,26 +18,30 @@ var cartRoute = require('./routes/cart.route');
 var transferRoute = require('./routes/transfer.route');
 
 var apiUserRoute = require('./api/routes/users.route');
+var apiUpload = require('./api/routes/dreamge.route');
 
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
-
+var cors = require('cors');
 var db = require('./db');
 
 var port = 3000;
 
 app.set('view engine', 'pug');
 app.set('views', './views');
+app.use('/publics', express.static(path.join(__dirname, '/publics')));
+
+app.use(cors());
+app.options('*', cors());
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use('/api/users', apiUserRoute);
+app.use('/api', apiUpload);
 app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(sessionMiddleware);
 // app.use(csurf({ cookie: true }));
-
-app.use(express.static('publics'));
 
 
 // Routes

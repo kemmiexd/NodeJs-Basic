@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Thế giới Bất động sản 24h</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/mdb.min.css"/>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="shortcut icon" href="../img/favicon.png"/>
+  </head>
+  <body>
+    <div class="go-top" title="Lên đầu trang"><span></span><span></span></div>
+    <header>
+      <section class="menu wow">
+        <div class="toggleMenu d-block d-md-none"><i class="mdi mdi-menu"></i></div>
+        <div class="search-btn d-block d-md-none"><i class="mdi mdi-magnify"></i></div>
+        <div class="container">
+          <div class="logo"><a href="index.html"><img src="../img/logo.png"/></a></div>
+          <div class="main-menu">
+            <ul class="nav">
+              <div class="nav-close"><i class="mdi mdi-close d-block d-md-none"></i></div>
+              <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="ban.html">
+                   Bán<i class="mdi mdi-menu-down"></i></a>
+                <ul>
+                  <li><a href="ban.html">Căn hộ bán</a></li>
+                  <li><a href="ban.html">Văn phòng bán</a></li>
+                  <li><a href="ban.html">Đất bán</a></li>
+                  <li><a href="ban.html">Căn hộ bán</a></li>
+                  <li><a href="ban.html">Căn hộ bán</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="cho-thue.html">
+                   Cho thuê<i class="mdi mdi-menu-down"></i></a>
+                <ul>
+                  <li><a href="cho-thue.html">Căn hộ cho thuê</a></li>
+                  <li><a href="cho-thue.html">Siêu thị cho thuê</a></li>
+                  <li><a href="cho-thue.html">Đất cho thuê</a></li>
+                  <li><a href="cho-thue.html">Căn hộ cho thuê</a></li>
+                  <li><a href="cho-thue.html">Căn hộ cho thuê</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="du-an.html">Dự án</a></li>
+              <li class="nav-item"><a class="nav-link" href="tin-tuc.html">Tin tức</a></li>
+              <li class="nav-item"><a class="nav-link" href="dich-vu.html">Dịch vụ</a></li>
+              <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="overlay-menu"></div>
+    </header>
+    <article>
+      <section class="page-slider slider">
+        <div class="owl-carousel slider-carousel owl-theme">
+          <div class="item"><a href="#"><img src="../img/slider-1.png"/></a></div>
+          <div class="item"><a href="#"><img src="../img/slider-1.png"/></a></div>
+        </div>
+        <div class="search">
+          <div class="container">
+            <h1>Tìm kiếm ngay cho mình một căn hộ !</h1>
+            <form>
+              <input type="text" placeholder="Nhập từ khóa . . ."/>
+              <select>
+                <option>Bán</option>
+                <option>Cho thuê</option>
+              </select>
+              <select>
+                <option>Loại BĐS</option>
+                <option>Căn hộ cho thuê</option>
+                <option>Căn hộ bán</option>
+              </select>
+              <select>
+                <option>Tỉnh / Thành</option>
+                <option>TP Hồ Chí Minh</option>
+              </select>
+              <select>
+                <option>Quận / Huyện</option>
+                <option>Quận 2</option>
+              </select>
+              <button type="submit">Tìm kiếm</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="bread-crumb">
+        <div class="container">
+          <div class="bc-icons">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active">Cho thuê</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="page-content">
+        <div class="container">
+          <div class="title-page">
+            <h3> <a>Cho thuê</a></h3>
+          </div>
+          <div class="page-zone">
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+            <div class="box-rent">
+              <div class="box-rent-date"><i class="mdi mdi-calendar-outline"> </i>22/04/2019</div>
+              <div class="box-rent-img"><i class="mdi mdi-image-search-outline" title="Nhấn để phóng to ảnh" data-caption="Căn hộ cao cấp nằm giữa trung tâm Quận 1" data-fancybox="gallery" href="../img/rent-1.png"></i><a href="chi-tiet-cho-thue.html"><img src="../img/rent-1.png"/></a></div>
+              <div class="box-rent-detail">
+                <h3><a href="chi-tiet-cho-thue.html">Căn hộ cao cấp nằm giữa trung tâm Quận 1</a></h3>
+                <h5> <i class="mdi mdi-map-marker-outline"></i>10 Nguyễn Thái Bình, Quận 1, TPHCM</h5>
+                <div class="box-rent-detail-option"><span>2 Phòng ngủ</span><span>2 Phòng tắm</span><span>50m2</span></div>
+              </div>
+              <div class="box-rent-price">
+                <h3>50tr<span>/ Tháng</span></h3>
+                <h6>CĂN HỘ CHO thuê</h6>
+              </div>
+            </div>
+          </div>
+          <div class="main-paging">
+            <nav>
+              <ul class="pagination justify-content-end">
+                <li><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                <li><a class="page-link active" href="#">1</a></li>
+                <li><a class="page-link" href="#">2</a></li>
+                <li><a class="page-link" href="#">3</a></li>
+                <li><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next </span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="about">
+              <h4>
+                 Về chúng tôi<i class="mdi mdi-chevron-down"></i></h4>
+              <ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, debitis? Animi, explicabo reprehenderit voluptatibus corrupti quibusdam ullam modi nesciunt pariatur unde fuga asperiores architecto, exercitationem aperiam quasi illum culpa? Nobis.</p>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="contact">
+              <h4>
+                 Thông tin liên hệ<i class="mdi mdi-chevron-down"></i></h4>
+              <ul>
+                <li><i class="mdi mdi-map-outline"></i>81 Bùi Tư Toàn, An Lạc, Bình Tân, HCM</li>
+                <li><i class="mdi mdi-deskphone"></i>0357.00.9999</li>
+                <li><i class="mdi mdi-email-outline"></i>batdongsan247.tv@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-sm-12">
+            <div class="letter">
+              <h4>
+                 Đăng ký nhận bản tin<i class="mdi mdi-chevron-down"></i></h4>
+              <form action="">
+                <input type="text" placeholder="Nhập email của bạn. . ."/>
+                <button type="submit">đăng ký</button>
+              </form>
+              <h5>Theo dõi chúng tôi qua:<span><a href="#"><i class="mdi mdi-facebook-box"></i></a><a href="#"><i class="mdi mdi-youtube"></i></a></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          <h5>Copyright @ 2019 Thế giới BĐS 24h. All Reserved. Designed by Tri Viet</h5>
+        </div>
+      </div>
+    </section>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.hoverdir.js"></script>
+    <script src="../js/modernizr.custom.97074.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/layout.js"></script>
+  </body>
+</html>
