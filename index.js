@@ -7,10 +7,12 @@ var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var path = require('path');
-// var csurf = require('csurf');
-var mongoose = require('mongoose');
+var fileUpload = require('express-fileupload');
 
-mongoose.connect(process.env.MONGO_URL);
+// var csurf = require('csurf');
+// var mongoose = require('mongoose');
+
+// mongoose.connect(process.env.MONGO_URL);
 
 var userRoute = require('./routes/users.route');
 var authRoute = require('./routes/auth.route');
@@ -26,7 +28,7 @@ var sessionMiddleware = require('./middlewares/session.middleware');
 var cors = require('cors');
 var db = require('./db');
 
-var port = 3000;
+var port = 3001;
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -34,6 +36,7 @@ app.use('/publics', express.static(path.join(__dirname, '/publics')));
 
 app.use(cors());
 app.options('*', cors());
+app.use(fileUpload());
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded

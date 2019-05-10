@@ -3,10 +3,10 @@ var controller = require('../controller/dreamage.controller');
 var router = express.Router();
 
 var multer = require('multer');
-var upload = multer({ dest: './publics/uploads/' });
+var upload = multer();
 
 router.get('/api-upload', controller.index);
-router.post('/api-upload', upload.single('avatar'), controller.create);
+router.post('/api-upload', controller.create);
 
 module.exports = router;
 
